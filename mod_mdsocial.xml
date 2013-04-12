@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+    <name>MD Social</name>
+    <author>M. Hiddink</author>
+	<creationDate>12-04-2013</creationDate>
+	<authorEmail>support@mardinkwebdesign.com</authorEmail>
+	<authorUrl>http://www.mardinkwebdesign.com/</authorUrl>
+    <version>1.0.0</version>
+    <licence>GNU/GPL http://www.gnu.org/licenses/gpl.html</licence>
+	<description>MOD_MDSOCIAL_DESCRIPTION</description>
+	
+    <files>
+        <filename module="mod_mdsocial">mod_mdsocial.php</filename>
+        <filename>index.html</filename>
+        <folder>assets</folder>
+        <folder>tmpl</folder>
+        <folder>languages</folder>
+    </files>
+ <languages folder="languages">
+<language tag="en-GB">en-GB/en-GB.mod_mdsocial.ini</language>
+<language tag="en-GB">en-GB/en-GB.mod_mdsocial.sys.ini</language>
+<language tag="nl-NL">nl-NL/nl-NL.mod_mdsocial.ini</language>
+<language tag="nl-NL">nl-NL/nl-NL.mod_mdsocial.sys.ini</language>
+</languages>   
+<config>
+<fields name="params">
+	<fieldset name="basic">
+			<field name="twitter" type="radio" class="btn-group" default="1" label="MOD_MDSOCIAL_TWITTER_LABEL" description="MOD_MDSOCIAL_TWITTER_DESCR">
+    		<option value="1">MOD_MDSOCIAL_SHOW</option>
+    		<option value="0">MOD_MDSOCIAL_HIDE</option>
+			</field>
+    	<field name="twitterlink" type="text" size="32" default="" label="MOD_MDSOCIAL_TWITTERLINK_LABEL" description="MOD_MDDONATE_TWITTERLINK_DESCR" />
+    	 
+	</fieldset>
+	<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+</fields>
+</config>
+<updateservers>
+    <server type="extension" priority="1"
+        name="MD Social Update"><![CDATA[http://raspberry.mardink.nl/joomla/index.php?option=com_ars&view=update&task=stream&format=xml&id=1&dummy=extension.xml]]></server>
+</updateservers>
+</extension>
