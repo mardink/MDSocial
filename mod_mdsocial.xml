@@ -25,6 +25,10 @@
 <config>
 <fields name="params">
 	<fieldset name="basic">
+					<field name="target" type="radio" class="btn-group" default="1" label="MOD_MDSOCIAL_TARGET_LABEL" description="MOD_MDSOCIAL_TARGET_DESCR">
+    		<option value="1">MOD_MDSOCIAL_TARGET_YES</option>
+    		<option value="0">MOD_MDSOCIAL_TARGET_NO</option>
+    		</field>
 				<field name="size" type="radio" class="btn-group" default="48x48" label="MOD_MDSOCIAL_SIZE_LABEL" description="MOD_MDSOCIAL_SIZE_DESCR">
     		<option value="60x60">MOD_MDSOCIAL_SIZE_LARGE</option>
     		<option value="48x48">MOD_MDSOCIAL_SIZE_MEDIUM</option>
