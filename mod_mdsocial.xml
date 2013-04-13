@@ -25,12 +25,36 @@
 <config>
 <fields name="params">
 	<fieldset name="basic">
+				<field name="size" type="radio" class="btn-group" default="48x48" label="MOD_MDSOCIAL_SIZE_LABEL" description="MOD_MDSOCIAL_SIZE_DESCR">
+    		<option value="60x60">MOD_MDSOCIAL_SIZE_LARGE</option>
+    		<option value="48x48">MOD_MDSOCIAL_SIZE_MEDIUM</option>
+    		<option value="24x24">MOD_MDSOCIAL_SIZE_SMALL</option>
+			</field>
 			<field name="twitter" type="radio" class="btn-group" default="1" label="MOD_MDSOCIAL_TWITTER_LABEL" description="MOD_MDSOCIAL_TWITTER_DESCR">
     		<option value="1">MOD_MDSOCIAL_SHOW</option>
     		<option value="0">MOD_MDSOCIAL_HIDE</option>
 			</field>
-    	<field name="twitterlink" type="text" size="32" default="" label="MOD_MDSOCIAL_TWITTERLINK_LABEL" description="MOD_MDDONATE_TWITTERLINK_DESCR" />
-    	 
+    	<field name="twitterlink" type="text" size="32" default="" label="MOD_MDSOCIAL_TWITTERLINK_LABEL" description="MOD_MDSOCIAL_TWITTERLINK_DESCR" />
+    	 	<field name="facebook" type="radio" class="btn-group" default="1" label="MOD_MDSOCIAL_FACEBOOK_LABEL" description="MOD_MDSOCIAL_FACEBOOK_DESCR">
+    		<option value="1">MOD_MDSOCIAL_SHOW</option>
+    		<option value="0">MOD_MDSOCIAL_HIDE</option>
+			</field>
+    	<field name="facebooklink" type="text" size="32" default="" label="MOD_MDSOCIAL_FACEBOOKLINK_LABEL" description="MOD_MDSOCIAL_FACEBOOKLINK_DESCR" />
+			<field name="github" type="radio" class="btn-group" default="1" label="MOD_MDSOCIAL_GITHUB_LABEL" description="MOD_MDSOCIAL_GITHUB_DESCR">
+    		<option value="1">MOD_MDSOCIAL_SHOW</option>
+    		<option value="0">MOD_MDSOCIAL_HIDE</option>
+			</field>
+    	<field name="githublink" type="text" size="32" default="" label="MOD_MDSOCIAL_GITHUBLINK_LABEL" description="MOD_MDSOCIAL_GITHUBLINK_DESCR" />	
+			<field name="joomla" type="radio" class="btn-group" default="1" label="MOD_MDSOCIAL_JOOMLA_LABEL" description="MOD_MDSOCIAL_JOOMLA_DESCR">
+    		<option value="1">MOD_MDSOCIAL_SHOW</option>
+    		<option value="0">MOD_MDSOCIAL_HIDE</option>
+			</field>
+    	<field name="joomlalink" type="text" size="32" default="" label="MOD_MDSOCIAL_JOOMLALINK_LABEL" description="MOD_MDSOCIAL_JOOMLALINK_DESCR" />	
+	<field name="linkedin" type="radio" class="btn-group" default="1" label="MOD_MDSOCIAL_LINKEDIN_LABEL" description="MOD_MDSOCIAL_LINKEDIN_DESCR">
+    		<option value="1">MOD_MDSOCIAL_SHOW</option>
+    		<option value="0">MOD_MDSOCIAL_HIDE</option>
+			</field>
+    	<field name="linkedinlink" type="text" size="32" default="" label="MOD_MDSOCIAL_LINKEDINLINK_LABEL" description="MOD_MDSOCIAL_LINKEDINLINK_DESCR" />
 	</fieldset>
 	<fieldset name="advanced">
 				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
