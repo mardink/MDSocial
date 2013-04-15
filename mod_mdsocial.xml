@@ -5,7 +5,7 @@
 	<creationDate>12-04-2013</creationDate>
 	<authorEmail>support@mardinkwebdesign.com</authorEmail>
 	<authorUrl>http://www.mardinkwebdesign.com/</authorUrl>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <licence>GNU/GPL http://www.gnu.org/licenses/gpl.html</licence>
 	<description>MOD_MDSOCIAL_DESCRIPTION</description>
 	
@@ -67,6 +67,6 @@
 </config>
 <updateservers>
     <server type="extension" priority="1"
-        name="MD Social Update"><![CDATA[http://raspberry.mardink.nl/joomla/index.php?option=com_ars&view=update&task=stream&format=xml&id=1&dummy=extension.xml]]></server>
+        name="MD Social Update"><![CDATA[http://www.md-web.eu/index.php?option=com_ars&view=update&task=stream&format=xml&id=2&dummy=extension.xml]]></server>
 </updateservers>
 </extension>
