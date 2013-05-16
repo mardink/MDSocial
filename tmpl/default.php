@@ -2,7 +2,7 @@
 	// no direct access
 	defined('_JEXEC') or die('Restricted access');
 	?>
-				<div class="<?php echo $moduleclass_sfx ?>">
+				<div class="mdsocial <?php echo $moduleclass_sfx ?>">
 		<?php 
 	$langSite = substr($params->get('locale'), 0, 2);
 	if ($langSite != '') {
