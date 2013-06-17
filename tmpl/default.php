@@ -35,6 +35,8 @@
 	$joomla = $params->get('joomla');
 	$linkedinlink = $params->get('linkedinlink');
 	$linkedin = $params->get('linkedin');
+    $googlepluslink = $params->get('googlepluslink');
+    $googleplus = $params->get('googleplus');
 	$target =$params->get('target');
 	$target_blank = 'target="_blank"';
 	if ($target=="1"){
@@ -62,7 +64,12 @@
 	if ($linkedin=="1"){?>
 		<a href="<?php echo $linkedinlink;?>" <?php echo $target_blank;?>><img src="./modules/mod_mdsocial/assets/linkedin<?php echo $size;?>.png" /></a>
 		<?php }	
-			?>
+
+    //Show LinkedIn icon
+    if ($googleplus=="1"){?>
+    <a href="<?php echo $googlepluslink;?>?rel=author" <?php echo $target_blank;?>><img src="./modules/mod_mdsocial/assets/googleplus<?php echo $size;?>.png" /></a>
+                    <?php }
+                    ?>
 	</div>
 	
 	
