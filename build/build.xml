@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="MDSocial" description="MDSocial module for Joomla!" default="update" > <!-- Change name and description -->
+<project name="MDSocial" description="MDSocial module for Joomla!" default="release" > <!-- Change name and description -->
 
     <!-- Default properties -->
     <property name="dirs.project" value=".." /> <!-- Change to the location of github repositorie -->
@@ -51,12 +51,13 @@
 </target>
 <target name="package" description="zip the folder to create installable file">
 
-    <zip destfile="${dirs.project}/package/com_${project}.zip">
+    <zip destfile="${dirs.project}/packages/mod_${project}.zip">
         <fileset dir="${dirs.project}">
             <include name="**/**" />
             <exclude name="build/**" />
-            <exclude name="package/**" />
+            <exclude name="packages/**" />
             <exclude name=".idea/**" />
+            <exclude name="README.md" />
         </fileset>
     </zip>
 </target>
