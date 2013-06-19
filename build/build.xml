@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="MDSocial" description="MDSocial module for Joomla!" default="update" > <!-- Change name and description -->
+
+    <!-- Default properties -->
+    <property name="dirs.project" value=".." /> <!-- Change to the location of github repositorie -->
+    <property name="dirs.language" value="../../md-web/language" />
+    <property name="dirs.front" value="../../md-web/modules" />
+    <property name="project" value="mdsocial" /> <!-- Change the project name -->
+
+
+    <!--
+    ====================================================================================================
+    Tasks - General
+    ====================================================================================================
+    -->
+
+    <target name="update" description="Deletes and copies everything"
+            depends="delete,copy">
+    </target>
+    <target name="release" description="Deletes and copies everything"
+            depends="delete,copy,package">
+    </target>
+
+
+
+    <!-- Delete target folder content -->
+    <target name="delete" description="deletes files and folders in target folder">
+        <delete dir="${dirs.project}/assets" includeemptydirs="true" />
+        <delete dir="${dirs.project}/tmpl" includeemptydirs="true" />
+        <delete dir="${dirs.project}/languages" includeemptydirs="true" />
+        <delete file="mod_${project}.php" />
+        <delete file="mod_${project}.xml" />
+    </target>
+
+    <!-- Copy the files to the github folder -->
+<target name="copy" description="Copies file from joomla to github folder">
+
+    <!-- Copy module files -->
+    <copy todir="${dirs.project}" >
+        <fileset dir="${dirs.front}/mod_${project}">
+            <include name="**/*.*" />
+        </fileset>
+    </copy>
+
+    <!-- Copy language files backend-->
+    <copy file="${dirs.language}/en-GB/en-GB.mod_${project}.ini" tofile="${dirs.project}/languages/en-GB/en-GB.mod_${project}.ini" haltonerror="false" overwrite="true"/>
+    <copy file="${dirs.language}/en-GB/en-GB.mod_${project}.sys.ini" tofile="${dirs.project}/languages/en-GB/en-GB.mod_${project}.sys.ini" haltonerror="false" overwrite="true"/>
+    <copy file="${dirs.language}/nl-NL/nl-NL.mod_${project}.ini" tofile="${dirs.project}/languages/nl-NL/nl-NL.mod_${project}.ini" haltonerror="false" overwrite="true"/>
+    <copy file="${dirs.language}/nl-NL/nl-NL.mod_${project}.sys.ini" tofile="${dirs.project}/languages/nl-NL/nl-NL.mod_${project}.sys.ini" haltonerror="false" overwrite="true"/>
+
+</target>
+<target name="package" description="zip the folder to create installable file">
+
+    <zip destfile="${dirs.project}/package/com_${project}.zip">
+        <fileset dir="${dirs.project}">
+            <include name="**/**" />
+            <exclude name="build/**" />
+            <exclude name="package/**" />
+            <exclude name=".idea/**" />
+        </fileset>
+    </zip>
+</target>
+
+
+</project>
