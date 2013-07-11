@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="MDSocial" description="MDSocial module for Joomla!" default="release" > <!-- Change name and description -->
+<project name="MDSocial" description="MDSocial module for Joomla!" default="update" > <!-- Change name and description -->
 
     <!-- Default properties -->
     <property name="dirs.project" value=".." /> <!-- Change to the location of github repositorie -->
@@ -49,6 +49,8 @@
     <copy file="${dirs.language}/nl-NL/nl-NL.mod_${project}.sys.ini" tofile="${dirs.project}/languages/nl-NL/nl-NL.mod_${project}.sys.ini" haltonerror="false" overwrite="true"/>
 
 </target>
+
+
 <target name="package" description="zip the folder to create installable file">
 
     <zip destfile="${dirs.project}/packages/mod_${project}.zip">
