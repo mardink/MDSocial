@@ -46,28 +46,28 @@
 		}
 	//Show twitter icon
 	if ($twitter=="1"){?>
-		<a href="<?php echo $twitterlink;?>" <?php echo $target_blank;?>><img src="./modules/mod_mdsocial/assets/twitter<?php echo $size;?>.png" /></a>
+		<a href="<?php echo $twitterlink;?>" <?php echo $target_blank;?>><img src="./modules/mod_mdsocial/assets/twitter<?php echo $size;?>.png" alt="twitterlink" /></a>
 		<?php }
 	//Show Facebook Icon
 	if ($facebook=="1"){?>
-		<a href="<?php echo $facebooklink;?>" <?php echo $target_blank;?>><img src="./modules/mod_mdsocial/assets/facebook<?php echo $size;?>.png" /></a>
+		<a href="<?php echo $facebooklink;?>" <?php echo $target_blank;?>><img src="./modules/mod_mdsocial/assets/facebook<?php echo $size;?>.png" alt="facebooklink" /></a>
 		<?php }
 	//Show Github Icon
 	if ($github=="1"){?>
-		<a href="<?php echo $githublink;?>" <?php echo $target_blank;?>><img src="./modules/mod_mdsocial/assets/github<?php echo $size;?>.png" /></a>
+		<a href="<?php echo $githublink;?>" <?php echo $target_blank;?>><img src="./modules/mod_mdsocial/assets/github<?php echo $size;?>.png" alt="githublink"/></a>
 		<?php }	
 	//Show Joomla! Extension icon
 	if ($joomla=="1"){?>
-		<a href="<?php echo $joomlalink;?>" <?php echo $target_blank;?>><img src="./modules/mod_mdsocial/assets/joomla<?php echo $size;?>.png" /></a>
+		<a href="<?php echo $joomlalink;?>" <?php echo $target_blank;?>><img src="./modules/mod_mdsocial/assets/joomla<?php echo $size;?>.png" alt="jedlink" /></a>
 		<?php }	
 	//Show LinkedIn icon
 	if ($linkedin=="1"){?>
-		<a href="<?php echo $linkedinlink;?>" <?php echo $target_blank;?>><img src="./modules/mod_mdsocial/assets/linkedin<?php echo $size;?>.png" /></a>
+		<a href="<?php echo $linkedinlink;?>" <?php echo $target_blank;?>><img src="./modules/mod_mdsocial/assets/linkedin<?php echo $size;?>.png" alt="linkedinlink"/></a>
 		<?php }	
 
     //Show LinkedIn icon
     if ($googleplus=="1"){?>
-    <a href="<?php echo $googlepluslink;?>?rel=author" <?php echo $target_blank;?>><img src="./modules/mod_mdsocial/assets/googleplus<?php echo $size;?>.png" /></a>
+    <a href="<?php echo $googlepluslink;?>?rel=author" <?php echo $target_blank;?>><img src="./modules/mod_mdsocial/assets/googleplus<?php echo $size;?>.png" alt="googlepluslink"/></a>
                     <?php }
                     ?>
 	</div>
