@@ -16,6 +16,9 @@
 
 	// no direct access
 	defined('_JEXEC') or die('Restricted access');
+    $document = JFactory::getDocument();
+    // Add styles
+$document->addStyleSheet('modules/mod_mdsocial/css/mdsocial.css');
 	?>
 				<div class="mdsocial<?php echo $moduleclass_sfx ?>">
 		<?php 
@@ -46,28 +49,28 @@
 		}
 	//Show twitter icon
 	if ($twitter=="1"){?>
-		<a href="<?php echo $twitterlink;?>" <?php echo $target_blank;?>><img src="/modules/mod_mdsocial/assets/twitter<?php echo $size;?>.png" alt="twitterlink" /></a>
+		<a href="<?php echo $twitterlink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> twitter-<?php echo $size;?>"></i></a>
 		<?php }
 	//Show Facebook Icon
 	if ($facebook=="1"){?>
-		<a href="<?php echo $facebooklink;?>" <?php echo $target_blank;?>><img src="/modules/mod_mdsocial/assets/facebook<?php echo $size;?>.png" alt="facebooklink" /></a>
+		<a href="<?php echo $facebooklink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> facebook-<?php echo $size;?>"></i></a>
 		<?php }
 	//Show Github Icon
 	if ($github=="1"){?>
-		<a href="<?php echo $githublink;?>" <?php echo $target_blank;?>><img src="/modules/mod_mdsocial/assets/github<?php echo $size;?>.png" alt="githublink"/></a>
+		<a href="<?php echo $githublink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> github-<?php echo $size;?>"></i></a>
 		<?php }	
 	//Show Joomla! Extension icon
 	if ($joomla=="1"){?>
-		<a href="<?php echo $joomlalink;?>" <?php echo $target_blank;?>><img src="/modules/mod_mdsocial/assets/joomla<?php echo $size;?>.png" alt="jedlink" /></a>
+		<a href="<?php echo $joomlalink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> jed-<?php echo $size;?>"></i></a>
 		<?php }	
 	//Show LinkedIn icon
 	if ($linkedin=="1"){?>
-		<a href="<?php echo $linkedinlink;?>" <?php echo $target_blank;?>><img src="/modules/mod_mdsocial/assets/linkedin<?php echo $size;?>.png" alt="linkedinlink"/></a>
+		<a href="<?php echo $linkedinlink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> linkedin-<?php echo $size;?>"></i></a>
 		<?php }	
 
     //Show LinkedIn icon
     if ($googleplus=="1"){?>
-    <a href="<?php echo $googlepluslink;?>?rel=author" <?php echo $target_blank;?>><img src="/modules/mod_mdsocial/assets/googleplus<?php echo $size;?>.png" alt="googlepluslink"/></a>
+    <a href="<?php echo $googlepluslink;?>?rel=author" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> google-<?php echo $size;?>"></i></a>
                     <?php }
                     ?>
 	</div>

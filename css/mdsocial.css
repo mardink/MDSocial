@@ -1,0 +1,70 @@
+.icon {
+    display: inline-block;
+    background:url(../assets/sprites.png);
+}
+.icon-24x24 {
+    width: 24px;
+    height: 24px;
+}
+.icon-48x48 {
+    width: 48px;
+    height: 48px;
+}
+.icon-60x60 {
+    width: 60px;
+    height: 60px;
+}
+.facebook-24x24 {
+    background-position: 0px 0px;
+    }
+.facebook-48x48 {
+    background-position: 0px -34px;
+}
+.facebook-60x60 {
+    background-position: 0px -92px;
+}
+.github-24x24 {
+background-position: 0px -162px;
+}
+.github-48x48 {
+background-position: 0px -196px;
+}
+.github-60x60 {
+background-position: 0px -254px;
+}
+.google-24x24 {
+background-position: 0px -324px;
+}
+.google-48x48 {
+background-position: 0px -358px;
+}
+.google-60x60 {
+background-position: 0px -416px;
+}
+.jed-24x24 {
+background-position: 0px -490px;
+}
+.jed-48x48 {
+background-position: 0px -524px;
+}
+.jed-60x60 {
+background-position: 0px -582px;
+}
+.linkedin-24x24 {
+background-position: 0px -652px;
+}
+.linkedin-48x48 {
+background-position: 0px -686px;
+}
+.linkedin-60x60 {
+background-position: 0px -744px;
+}
+.twitter-24x24 {
+background-position: 0px -814px;
+}
+.twitter-48x48 {
+background-position: 0px -848px;
+}
+.twitter-60x60 {
+background-position: 0px -906px;
+}

@@ -3,8 +3,8 @@
 
     <!-- Default properties -->
     <property name="dirs.project" value=".." /> <!-- Change to the location of github repositorie -->
-    <property name="dirs.language" value="../../md-web/language" />
-    <property name="dirs.front" value="../../md-web/modules" />
+    <property name="dirs.language" value="../../live/language" /><!-- Change to subfolder of www-data -->
+    <property name="dirs.front" value="../../live/modules" /><!-- Change to subfolder of www-data -->
     <property name="project" value="mdsocial" /> <!-- Change the project name -->
 
 
