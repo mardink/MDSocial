@@ -40,6 +40,8 @@ $document->addStyleSheet('modules/mod_mdsocial/css/mdsocial.css');
 	$linkedin = $params->get('linkedin');
     $googlepluslink = $params->get('googlepluslink');
     $googleplus = $params->get('googleplus');
+    $youtubelink = $params->get('youtubelink');
+    $toutube = $params->get('youtube');
 	$target =$params->get('target');
 	$target_blank = 'target="_blank"';
 	if ($target=="1"){
@@ -68,10 +70,14 @@ $document->addStyleSheet('modules/mod_mdsocial/css/mdsocial.css');
 		<a href="<?php echo $linkedinlink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> linkedin-<?php echo $size;?>"></i></a>
 		<?php }	
 
-    //Show LinkedIn icon
+    //Show Googlepuls icon
     if ($googleplus=="1"){?>
     <a href="<?php echo $googlepluslink;?>?rel=author" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> google-<?php echo $size;?>"></i></a>
                     <?php }
+        //Show youtube icon
+        if ($youtube=="1"){?>
+            <a href="<?php echo $youtubelink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> youtube-<?php echo $size;?>"></i></a>
+        <?php }
                     ?>
 	</div>
 	

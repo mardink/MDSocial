@@ -65,7 +65,11 @@
             <option value="0">MOD_MDSOCIAL_HIDE</option>
         </field>
         <field name="googlepluslink" type="text" size="32" default="" label="MOD_MDSOCIAL_GOOGLEPLUSLINK_LABEL" description="MOD_MDSOCIAL_GOOGLEPLUSLINK_DESCR" />
-	</fieldset>
+        <field name="youtube" type="radio" class="btn-group" default="1" label="MOD_MDSOCIAL_YOUTUBE_LABEL" description="MOD_MDSOCIAL_YOUTUBE_DESCR">
+            <option value="1">MOD_MDSOCIAL_SHOW</option>
+            <option value="0">MOD_MDSOCIAL_HIDE</option>
+        </field>
+        <field name="youtubelink" type="text" size="32" default="" label="MOD_MDSOCIAL_YOUTUBELINK_LABEL" description="MOD_MDSOCIAL_YOUTUBELINK_DESCR" /></fieldset>
 	<fieldset name="advanced">
 				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
 			</fieldset>
