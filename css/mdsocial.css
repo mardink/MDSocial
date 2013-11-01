@@ -14,57 +14,25 @@
     width: 60px;
     height: 60px;
 }
-.facebook-24x24 {
-    background-position: 0px 0px;
-    }
-.facebook-48x48 {
-    background-position: 0px -34px;
-}
-.facebook-60x60 {
-    background-position: 0px -92px;
-}
-.github-24x24 {
-background-position: 0px -162px;
-}
-.github-48x48 {
-background-position: 0px -196px;
-}
-.github-60x60 {
-background-position: 0px -254px;
-}
-.google-24x24 {
-background-position: 0px -324px;
-}
-.google-48x48 {
-background-position: 0px -358px;
-}
-.google-60x60 {
-background-position: 0px -416px;
-}
-.jed-24x24 {
-background-position: 0px -490px;
-}
-.jed-48x48 {
-background-position: 0px -524px;
-}
-.jed-60x60 {
-background-position: 0px -582px;
-}
-.linkedin-24x24 {
-background-position: 0px -652px;
-}
-.linkedin-48x48 {
-background-position: 0px -686px;
-}
-.linkedin-60x60 {
-background-position: 0px -744px;
-}
-.twitter-24x24 {
-background-position: 0px -814px;
-}
-.twitter-48x48 {
-background-position: 0px -848px;
-}
-.twitter-60x60 {
-background-position: 0px -906px;
-}
+.facebook24x24{ background-position: 0 0;  }
+.facebook48x48{ background-position: 0 -34px;  }
+.facebook60x60{ background-position: 0 -92px;  }
+.github24x24{ background-position: 0 -162px;  }
+.github48x48{ background-position: 0 -196px;  }
+.github60x60{ background-position: 0 -254px;  }
+.googleplus24x24{ background-position: 0 -324px;  }
+.googleplus48x48{ background-position: 0 -358px;  }
+.googleplus60x60{ background-position: 0 -416px;  }
+.joomla24x24{ background-position: 0 -490px;  }
+.joomla48x48{ background-position: 0 -524px;  }
+.joomla60x60{ background-position: 0 -582px;  }
+.linkedin24x24{ background-position: 0 -652px;  }
+.linkedin48x48{ background-position: 0 -686px;  }
+.linkedin60x60{ background-position: 0 -744px;  }
+.twitter24x24{ background-position: 0 -814px;  }
+.twitter48x48{ background-position: 0 -848px;  }
+.twitter60x60{ background-position: 0 -906px;  }
+.youtube24x24{ background-position: 0 -976px;  }
+.youtube48x48{ background-position: 0 -1010px;  }
+.youtube60x60{ background-position: 0 -1068px;  }
+
