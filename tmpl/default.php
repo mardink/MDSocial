@@ -41,7 +41,7 @@ $document->addStyleSheet('modules/mod_mdsocial/css/mdsocial.css');
     $googlepluslink = $params->get('googlepluslink');
     $googleplus = $params->get('googleplus');
     $youtubelink = $params->get('youtubelink');
-    $toutube = $params->get('youtube');
+    $youtube = $params->get('youtube');
 	$target =$params->get('target');
 	$target_blank = 'target="_blank"';
 	if ($target=="1"){
@@ -51,32 +51,32 @@ $document->addStyleSheet('modules/mod_mdsocial/css/mdsocial.css');
 		}
 	//Show twitter icon
 	if ($twitter=="1"){?>
-		<a href="<?php echo $twitterlink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> twitter-<?php echo $size;?>"></i></a>
+		<a href="<?php echo $twitterlink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> twitter<?php echo $size;?>"></i></a>
 		<?php }
 	//Show Facebook Icon
 	if ($facebook=="1"){?>
-		<a href="<?php echo $facebooklink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> facebook-<?php echo $size;?>"></i></a>
+		<a href="<?php echo $facebooklink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> facebook<?php echo $size;?>"></i></a>
 		<?php }
 	//Show Github Icon
 	if ($github=="1"){?>
-		<a href="<?php echo $githublink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> github-<?php echo $size;?>"></i></a>
+		<a href="<?php echo $githublink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> github<?php echo $size;?>"></i></a>
 		<?php }	
 	//Show Joomla! Extension icon
 	if ($joomla=="1"){?>
-		<a href="<?php echo $joomlalink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> jed-<?php echo $size;?>"></i></a>
+		<a href="<?php echo $joomlalink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> joomla<?php echo $size;?>"></i></a>
 		<?php }	
 	//Show LinkedIn icon
 	if ($linkedin=="1"){?>
-		<a href="<?php echo $linkedinlink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> linkedin-<?php echo $size;?>"></i></a>
+		<a href="<?php echo $linkedinlink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> linkedin<?php echo $size;?>"></i></a>
 		<?php }	
 
     //Show Googlepuls icon
     if ($googleplus=="1"){?>
-    <a href="<?php echo $googlepluslink;?>?rel=author" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> google-<?php echo $size;?>"></i></a>
+    <a href="<?php echo $googlepluslink;?>?rel=author" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> googleplus<?php echo $size;?>"></i></a>
                     <?php }
         //Show youtube icon
         if ($youtube=="1"){?>
-            <a href="<?php echo $youtubelink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> youtube-<?php echo $size;?>"></i></a>
+            <a href="<?php echo $youtubelink;?>" <?php echo $target_blank;?>><i class="icon icon-<?php echo $size;?> youtube<?php echo $size;?>"></i></a>
         <?php }
                     ?>
 	</div>
